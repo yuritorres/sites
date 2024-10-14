@@ -66,11 +66,17 @@
             border-radius: 20px;
             padding: 10px 20px;
             text-transform: uppercase;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s, transform 0.1s;
         }
 
         .btn-custom:hover {
-           background-color: #333;
+            background-color: #333;
+        }
+
+        /* Efeito de clique */
+        .btn-custom:active {
+            background-color: #1a1a1a;
+            transform: scale(0.95);
         }
 
         footer {
@@ -91,6 +97,10 @@
 
         .control-btn:hover {
             color: #005A9E;
+        }
+
+        .control-btn:active {
+            color: #003d73;
         }
     </style>
 </head>
