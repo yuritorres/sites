@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos Microsoft 365</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        header h1 {
+            margin-top: 40px;
+            text-align: center;
+            font-weight: 700;
+            color: #333;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 40px 0;
+        }
+
+        .card {
+            width: 300px;
+            border: none;
+            border-radius: 16px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 48px;
+            margin: 20px auto;
+        }
+
+        .card-body {
+            text-align: center;
+        }
+
+        .card-title {
+            font-size: 1.2rem;
+            color: #0078D4;
+            margin-bottom: 10px;
+        }
+
+        .card-text {
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .btn-custom {
+            background-color: black;
+            color: white;
+            border-radius: 20px;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            transition: background-color 0.3s;
+        }
+
+        .btn-custom:hover {
+           background-color: #333;
+        }
+
+        footer {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .control-btn {
+            background-color: transparent;
+            border: none;
+            font-size: 2rem;
+            color: #0078D4;
+            margin: 0 10px;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .control-btn:hover {
+            color: #005A9E;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Saiba mais sobre os produtos do Microsoft 365</h1>
+    </header>
+
+    <div class="container">
+        <div class="card-container">
+
+            <!-- Card Word -->
+            <div class="card">
+                <img src="https://img.icons8.com/fluency/48/000000/ms-word.png" alt="Word">
+                <div class="card-body">
+                    <h5 class="card-title">Word</h5>
+                    <p class="card-text">
+                        Eleve sua escrita e crie lindos documentos, em praticamente qualquer lugar, a qualquer hora.
+                    </p>
+                    <button class="btn btn-custom">Saiba mais</button>
+                </div>
+            </div>
+
+            <!-- Card Excel -->
+            <div class="card">
+                <img src="https://img.icons8.com/fluency/48/000000/ms-excel.png" alt="Excel">
+                <div class="card-body">
+                    <h5 class="card-title">Excel</h5>
+                    <p class="card-text">
+                        Transforme dados em insights com planilhas gratuitas e premium.
+                    </p>
+                    <button class="btn btn-custom">Saiba mais</button>
+                </div>
+            </div>
+
+            <!-- Card PowerPoint -->
+            <div class="card">
+                <img src="https://img.icons8.com/fluency/48/000000/ms-powerpoint.png" alt="PowerPoint">
+                <div class="card-body">
+                    <h5 class="card-title">PowerPoint</h5>
+                    <p class="card-text">
+                        Crie apresentações impactantes e bem elaboradas usando ferramentas e recursos de design inteligentes.
+                    </p>
+                    <button class="btn btn-custom">Saiba mais</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <button class="control-btn">&#8592;</button>
+        <button class="control-btn">&#8594;</button>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
